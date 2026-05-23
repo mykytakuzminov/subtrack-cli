@@ -3,6 +3,7 @@ package storage
 import (
 	"encoding/json"
 	"errors"
+	"strings"
 	"os"
 
 	"github.com/mykytakuzminov/subtrack-cli/models"
@@ -58,7 +59,7 @@ func (js *JSONStorage) Delete(id string) error {
 
 	var updatedSubscriptions []models.Subscription
 	for _, s := range subscriptions {
-		if s.ID != id {
+		if !strings.HasPrefix(s.ID, id) {
 			updatedSubscriptions = append(updatedSubscriptions, s)
 		}
 	}
