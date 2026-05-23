@@ -3,8 +3,8 @@ package storage
 import (
 	"encoding/json"
 	"errors"
-	"strings"
 	"os"
+	"strings"
 
 	"github.com/mykytakuzminov/subtrack-cli/models"
 )

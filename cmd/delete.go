@@ -7,9 +7,9 @@ import (
 )
 
 var deleteCmd = &cobra.Command{
-	Use: "delete",
+	Use:   "delete",
 	Short: "Delete a subscription",
-	Run: runDelete,
+	Run:   runDelete,
 }
 
 func init() {

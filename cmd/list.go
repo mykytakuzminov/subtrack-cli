@@ -10,7 +10,7 @@ import (
 var listCmd = &cobra.Command{
 	Use:   "list",
 	Short: "List all subscriptions",
-	Run: runList,
+	Run:   runList,
 }
 
 func init() {

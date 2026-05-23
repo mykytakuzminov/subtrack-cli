@@ -9,9 +9,9 @@ import (
 )
 
 var addCmd = &cobra.Command{
-	Use: "add",
+	Use:   "add",
 	Short: "Add a new subscription",
-	Run: runAdd,
+	Run:   runAdd,
 }
 
 func init() {
@@ -49,4 +49,3 @@ func runAdd(cmd *cobra.Command, args []string) {
 
 	fmt.Printf("Subscription '%s' added successfully!\n", name)
 }
-
