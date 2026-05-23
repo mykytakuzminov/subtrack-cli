@@ -7,11 +7,11 @@ import (
 )
 
 type Subscription struct {
-	ID           string
-	Name         string
-	Price        float64
-	BillingCycle string
-	CreatedAt    time.Time
+	ID           string    `json:"id"`
+	Name         string    `json:"name"`
+	Price        float64   `json:"price"`
+	BillingCycle string    `json:"billing_cycle"`
+	CreatedAt    time.Time `json:"created_at"`
 }
 
 func NewSubscription(
