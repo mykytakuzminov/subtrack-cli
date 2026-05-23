@@ -29,8 +29,8 @@ func runList(cmd *cobra.Command, args []string) {
 		return
 	}
 
-	fmt.Printf("%-20s | %8s | %-10s | %s\n", "Name", "Price", "Cycle", "Created")
-	fmt.Println(strings.Repeat("-", 55))
+	fmt.Printf("%-6s | %-20s | %8s | %-10s | %s\n", "ID", "Name", "Price", "Cycle", "Created")
+	fmt.Println(strings.Repeat("-", 66))
 
 	for _, sub := range subs {
 		fmt.Println(sub)

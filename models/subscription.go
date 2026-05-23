@@ -31,7 +31,8 @@ func NewSubscription(
 
 func (s Subscription) String() string {
 	return fmt.Sprintf(
-		"%-20s | %8.2f | %-10s | %s",
+		"%-6s | %-20s | %8.2f | %-10s | %s",
+		s.ID[:6],
 		s.Name,
 		s.Price,
 		s.BillingCycle,
