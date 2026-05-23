@@ -1,6 +1,7 @@
 package models
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/google/uuid"
@@ -26,4 +27,13 @@ func NewSubscription(
 		BillingCycle: billingCycle,
 		CreatedAt:    time.Now(),
 	}
+}
+
+func (s Subscription) String() string {
+	return fmt.Sprintf(
+		"%-20s | %8.2f | %-10s | %s",
+		s.Name,
+		s.Price,
+		s.BillingCycle,
+		s.CreatedAt.Format("2006-01-02"))
 }
