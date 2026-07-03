@@ -1,10 +1,23 @@
-# Subtrack CLI
+<div align="center">
 
-A simple CLI tool to track your subscriptions, built with Go.
+# 🚀 Subtrack CLI
 
-> This is my first Go project, built to practice the language after coming from Python.
+CLI tool to manage your subscriptions
 
-## Installation
+[![Go Version](https://img.shields.io/badge/Go-1.26-00ADD8?logo=go)](https://go.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+</div>
+
+---
+
+## Features
+
+- **Subscription** - create, list and delete
+
+## Getting Started
+
+### Installation
 
 ```bash
 git clone https://github.com/mykytakuzminov/subtrack-cli.git
@@ -14,7 +27,7 @@ sudo mkdir -p /usr/local/bin
 sudo mv subtrack /usr/local/bin/
 ```
 
-## Usage
+### Usage
 
 ```bash
 # Add a subscription
