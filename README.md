@@ -4,6 +4,7 @@
 
 CLI tool to manage your subscriptions
 
+[![CI](https://github.com/mykytakuzminov/subtrack-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mykytakuzminov/subtrack-cli/actions/workflows/ci.yml)
 [![Go Version](https://img.shields.io/badge/Go-1.26-00ADD8?logo=go)](https://go.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
